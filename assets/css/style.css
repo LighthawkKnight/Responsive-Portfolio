@@ -229,3 +229,27 @@ footer {
     text-align: center
 }
 
+@media screen and (max-width: 980px) {
+
+    body {
+        color: blue;
+        width: 820px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        color: blue;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        color: blue;
+        width: 480px;
+    }
+}
+
