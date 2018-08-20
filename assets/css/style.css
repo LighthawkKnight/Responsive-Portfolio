@@ -1,6 +1,9 @@
 body {
     background-image: url('../images/extra_clean_paper.png');
     background-repeat: repeat;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /*Fonts*/
@@ -18,14 +21,15 @@ header {
     border-bottom: 2px solid #cccccc;
     margin: auto;
     overflow: hidden;
+    width: 100%;
     margin-bottom: 40px;
 }
 
 .header_container {
-    width: 960px;
+    width: 100%;
     margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header a {
@@ -36,6 +40,7 @@ header a {
     line-height: 2px;
     border-radius: 4px;
 }
+
 
 .name {
     background-color: #4aaaa5;
@@ -49,7 +54,11 @@ header a {
 .menu {
     float: right;
     padding-top: 20px;
-    background-clip: content-box;
+    margin-right: 20%
+}
+
+.menu-item {
+    float: left;
 }
 
 .inactive:hover{
@@ -63,7 +72,7 @@ header a {
 }
 
 /*Extra div for footer calculations*/
-.main_body {
+.index_body, .port_body, .contact_body {
     min-height: calc(125vh);
 }
 
@@ -132,14 +141,14 @@ header a {
 
 .portfolio {
     padding: 0 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px;
     float: left;
 }
 
-.portfolio:hover {
+/*.portfolio:hover {
     border: 2px solid #cccc;
-}
+}*/
 
 .portfolio img {
     width: 250px;
@@ -148,14 +157,11 @@ header a {
     display: inline-block;
 }
 
-.row1, .row2 {
+.row {
     float: left;
     width: 100%;
-}
-
-.row2 {
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .img_container {
@@ -231,25 +237,151 @@ footer {
 
 @media screen and (max-width: 980px) {
 
+
     body {
-        color: blue;
-        width: 820px;
+        width: 980px;
+    }
+
+    .header_container {
+        margin-left: 5%;
+    }
+
+    .menu {
+        margin-right: 10%;
+    }
+
+    .container{
+        width: 65%;
+    }
+
+    .contact_container {
+        width: 80%;
+    }
+
+    .textbox_container {
+        width: 55%;
+    }
+
+    .connect_container {
+        width: 24%;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     body {
-        color: blue;
-        width: 600px;
+        width: 768px;
     }
+
+    .header_container {
+        height: auto;
+        margin: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .menu {
+        margin-right: 5%;
+        padding-right: 20px;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    .contact_container {
+        width: 85%;
+        float: left;
+        display: block;
+    }
+
+    .textbox_container {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+
+    .connect_container {
+        background-color: #ffffff;
+        border: 2px solid #cccccc;
+        width: 50%;
+        float: left;
+        position: relative;
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        margin-left: 25px;
+    }
+
+
 }
 
 @media screen and (max-width: 640px) {
 
     body {
-        color: blue;
-        width: 480px;
+        width: 640px;
+    }
+
+    
+    .header_container {
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border: 0;
+    }
+
+    .menu {
+        padding: 10px 0px 10px 0px;
+        margin-right: 29%;
+        
+    }
+
+    .index_body {
+        min-height: calc(200vh);
+    }
+
+    .port_body {
+        min-height: calc(400vh);
+    }
+
+
+    #profile_pic {
+        width: 100%;
+        max-width: 550px;
+        max-height: 550px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio img {
+        width: 510px;
+        height: 510px;    
+        margin: auto;
+        display: inline-block;
+    }
+
+    .caption {
+        font-size: 40px;
+        bottom: 15%;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textbox_container, connect_container {
+        margin-left: 15px;
     }
 }
 
