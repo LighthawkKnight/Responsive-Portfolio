@@ -58,11 +58,13 @@ header a {
 
 .menu-item {
     float: left;
+    margin-left: 5px;
 }
 
 .inactive:hover{
     background-color: rgb(219, 223, 231);
     color: black;
+    transition: 0.5s;
 }
 
 .active {
@@ -71,18 +73,31 @@ header a {
 }
 
 /*Extra div for footer calculations*/
-.index_body, .port_body, .contact_body {
+/* .index_body, .port_body, .contact_body {
     min-height: calc(125vh);
-}
+} */
 
 /*Index and Portfolio containers*/
+
+.index_body, .port_body{
+    width: 900px;
+    margin: auto;
+    float: left; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px; */
+}
+
 .container {
     background-color: #ffffff;
     border: 2px solid #cccccc;
     width: 900px;
     margin: auto;
     float: left;
-    position: absolute;
     left: 0;
     right: 0;
     padding-left: 30px;
@@ -110,11 +125,16 @@ header a {
 .connect_container {
     background-color: #ffffff;
     border: 2px solid #cccccc;
-    width: 212px;
+    width: 900px;
+    margin: auto;
     float: left;
+    left: 0;
+    right: 0;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
+    margin-top: 50px;
 }
 
 .title {
@@ -211,15 +231,15 @@ button {
     margin-top: 20px;
 }
 
-#gith, #ldin, #stko {
+#gith, #ldin, #stko, #gmai {
     float: left;
-    height: 63px;
-    width: 63px;
+    height: 100px;
+    width: 100px;
     object-fit: fill;
 }
 
 #gith, #ldin {
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 
