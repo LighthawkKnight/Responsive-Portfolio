@@ -114,6 +114,7 @@ header a {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .portfolio_container {
@@ -171,6 +172,8 @@ header a {
     text-align: left;
     line-height: 200%;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large; 
 }
 
 #profile_pic {
@@ -194,7 +197,7 @@ header a {
     border: 2px solid #cccc;
 }
 
-.portfolio img {
+.thumbnail {
     width: 355.6px;
     height: 200px;    
     object-fit: cover;
@@ -203,6 +206,7 @@ header a {
 
 .description {
     width: 355.6px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -213,6 +217,31 @@ header a {
 
 .img_container {
     position: relative;
+}
+
+.link_container {
+    text-align: center;
+    float: center;
+    width: 150px;
+    height: 40px;
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: 0;
+}
+
+
+.link_img {
+    float: center;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    opacity: 0.6;
+}
+
+.link_img:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .caption {
