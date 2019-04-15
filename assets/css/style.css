@@ -53,12 +53,13 @@ header a {
 .menu {
     float: right;
     padding-top: 20px;
-    margin-right: 20%
+    margin-right: 15%
 }
 
 .menu-item {
     float: left;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .inactive:hover{
@@ -92,6 +93,16 @@ header a {
     padding-top: 10px; */
 }
 
+.port_body{
+    width: 1200px;
+    margin: auto;
+    float: left; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+}
+
 .container {
     background-color: #ffffff;
     border: 2px solid #cccccc;
@@ -103,6 +114,20 @@ header a {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
+}
+
+.portfolio_container {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    width: 1200px;
+    margin: auto;
+    float: left;
+    left: 0;
+    right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .contact_container {
@@ -165,22 +190,25 @@ header a {
     float: left;
 }
 
-/*.portfolio:hover {
+.portfolio:hover {
     border: 2px solid #cccc;
-}*/
+}
 
 .portfolio img {
-    width: 250px;
-    height: 250px;    
+    width: 355.6px;
+    height: 200px;    
     object-fit: cover;
     display: inline-block;
+}
+
+.description {
+    width: 355.6px;
 }
 
 .row {
     float: left;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .img_container {
@@ -191,6 +219,7 @@ header a {
     position: absolute;
     background-color: #4aaaa5;
     color: #ffffff;
+    opacity: 0.85;
     text-align: center;
     bottom: 10%;
     width: 100%;
